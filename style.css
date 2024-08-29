@@ -27,14 +27,20 @@ body{
     gap: 1.5vmin;
 }
 
-.box{
+.box {
     height: 18vmin;
     width: 18vmin;
     border-radius: 0.5rem;
-    border:none;
-    box-shadow: 1px 2px #686767;
+    border: none;
+    background: linear-gradient(145deg, #ff4b4b, #800080); /* Red and Purple gradient */
+    box-shadow: 
+        5px 5px 15px rgba(128, 0, 128, 0.7),   /* Dark purple shadow on the right and bottom */
+        -5px -5px 15px rgba(255, 75, 75, 0.7), /* Light red shadow on the top and left */
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shadow for depth */
+        inset -2px -2px 5px rgba(255, 255, 255, 0.5); /* Inner highlight */
     font-size: 10vmin;
-    color: #2A7F62;
+    color: #fff; /* White text color for contrast */
+    transform: perspective(500px) rotateX(5deg) rotateY(10deg); /* 3D perspective and rotation */
 }
 
 #reset{
